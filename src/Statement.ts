@@ -8,7 +8,7 @@ import { StreamRowsOptions } from './types/StreamRowsOptions';
 export class Statement {
   private rows: any[] = null;
   private stmt: any = null;
-  private executePromise: Promise<Statement> = null;
+  private executePromise: Promise<void> = null;
 
   /**
    * @param connection the connection object from the SDK
